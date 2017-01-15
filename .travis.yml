@@ -64,7 +64,6 @@ matrix:
         - git submodule update --init --recursive
         - mkdir build && cd build
       script:
-        - set -e
         - cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$PWD/install ..
         - make -j4
 
