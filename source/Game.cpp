@@ -15,7 +15,7 @@ Game::Game() {
 }
 
 void Game::initHook() {
-  this will generate an error!! world.stateFunctionStack.push(&GameState::handleRunning);
+  world.stateFunctionStack.push(&GameState::handleRunning);
   world.stateFunctionStack.push(&GameState::handleSplash);
   gameController = std::make_unique<GameController>(this);
   World& worldReference = static_cast<glPortal::World&>(world);
